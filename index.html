@@ -16,13 +16,10 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
     <body>
-
-        <!-- HEADER -->
-        <header class="header" data-navbar>
-
-            <img src="./images/Logo .png" alt="" class="logo">
-
-            <nav>
+        <header class="header container">
+            <div class="header-cont" data-navbar>
+                <img src="./images/Logo .png" alt="" class="logo">
+            
                 <div class="header__menu">
                     <ul class="header__nav-item">
                         <li class="header__link"><a href="#home">HOME</a></li>
@@ -31,22 +28,37 @@
                         <li class="header__link"><a href="#testimonials">Testimonials</a></li>
                         <li class="header__link"><a href="#bookings">Bookings</a></li>
                     </ul>
-                    
-                    <ul class="header__auth-btn">
-                        <li class="header__login-btn"><a href="#login">Login</a></li>
-                        <li class="header__signup-btn"><a href="signup">Sign up</a></li>
-                    </ul>
-
                 </div>
-                <button class="header__bars" data-nav-toggle>
-                    <i class='bx bx-menu' ></i>
-                </button>
-            </nav>
-            <div class="header__overlay" data-overlay data-nav-toggle></div>
+            
+                <div class="header__auth-btn">
+                    <a href="#login" class="header__login-btn">Login</a></li>
+                    <a href="signup" class="header__signup-btn">Sign up</a></li>
+                    <button class="header__bars" data-nav-toggle>
+                        <i class='bx bx-menu'></i>
+                    </button>
+                </div>
+            
+            
+                <div class="sidebar">
+                    <ul>
+                        <li><a href="#home">HOME</a></li>
+                        <li><a href="#flights">Flights</a></li>
+                        <li><a href="#destinations">Destinations</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#bookings">Bookings</a></li>
+                    </ul>
+                </div>
+            </div>
         </header>
+        
 
         
          <main>
+
+            <section class="background">
+                <img src="image/Decore.png" alt="">
+            </section>
+            
             <section class="hero container">
                 <div class="hero__text">
                     <h4>Best Destinations Around the world</h4>
@@ -60,10 +72,10 @@
                     <div class="hero__btn">
                         <a href="#" class="btn1">Find out more</a>
                         <a href="#" class="btn2">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="hero__play-btn">
-                                <path fill-rule="evenodd" d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z" clip-rule="evenodd" />
-                            </svg>
-                            Play Demo</a>
+                            <div class="btn-box"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="hero__play-btn">
+                            <path fill-rule="evenodd" d="M4.5 5.653c0-1.426 1.529-2.33 2.779-1.643l11.54 6.348c1.295.712 1.295 2.573 0 3.285L7.28 19.991c-1.25.687-2.779-.217-2.779-1.643V5.653z" clip-rule="evenodd" />
+                        </svg></div>
+                            <h3>Play Demo</h3></a>
                     </div>
                 </div>
                 
@@ -81,24 +93,28 @@
                         <img src="images/Group 49.png" alt="">
                         <h5>calculatred weather</h5>
                         <p>built wicket longer <br> admire do barton <br> vanity itself do in it. military</p>
+                        <div class="services__card-bg"></div>
                     </div>
     
                     <div class="services__cate-card">
                         <img src="images/Group 51.png" alt="">
                         <h5>calculatred weather</h5>
                         <p>built wicket longer <br> admire do barton <br> vanity itself do in it. military</p>
+                        <div class="services__card-bg"></div>
                     </div>
     
                     <div class="services__cate-card">
                         <img src="images/Group 50.png" alt="">
                         <h5>calculatred weather</h5>
                         <p>built wicket longer <br> admire do barton <br> vanity itself do in it. military</p>
+                        <div class="services__card-bg"></div>
                     </div>
     
                     <div class="services__cate-card">
                         <img src="images/Group 50.png" alt="">
                         <h5>calculatred weather</h5>
                         <p>built wicket longer <br> admire do barton <br> vanity itself do in it. military</p>
+                        <div class="services__card-bg"></div>
                     </div>
                 </div>
             </section>
@@ -109,132 +125,214 @@
                     <h5>Top Selling</h5>
                     <h2>Top Destinations</h2>
                 </div>
-                <div class="destination__card-container">
-                    <div class="destination__card">
-                        <div class="destination__card-img">
-                            <img src="images/rome.png" alt="">
-                            <div class="destination__overlay"></div>
+
+                <div class="testdiv">
+                    <div class="destination__card-container">
+                        <div class="destination__card">
+                            <div class="destination__card-img">
+                                <img src="images/rome.png" alt="">
+                                <div class="destination__overlay"></div>
+                            </div>
+
+                            <div class="destination__card-text">
+                                <div class="text-details">
+                                    <h5>rome, italy</h5>
+                                    <div class="days">
+                                        <img src="images/Navigation.png" alt="">
+                                        <p>10 days trip</p>
+                                    </div>
+                                </div>
+                                <h6 class="text-price">$5,42k</h6>
+                            </div>
                         </div>
 
-                        <div class="destination__card-text">
-                            <div class="text-details">
-                                <h5>rome, italy</h5>
-                                <p>10 days trip</p>
+                            <div class="destination__card">
+                                <div class="destination__card-img">
+                                    <img src="images/london.jpg" alt="">
+                                    <div class="destination__overlay"></div>
+                                </div>
+
+                                <div class="destination__card-text">
+                                    <div class="text-details">
+                                        <h5>London, UK</h5>
+                                        <div class="days">
+                                            <img src="images/Navigation.png" alt="">
+                                            <p>10 days trip</p>
+                                        </div>
+                                    </div>
+                                    <h6 class="text-price">$5,42k</h6>
+                                </div>
                             </div>
-                            <h6 class="text-price">$5,42k</h6>
-                        </div>
+
+                            <div class="destination__card">
+                                <div class="destination__card-img">
+                                    <img src="images/europe.png" alt="">
+                                    <div class="destination__overlay"></div>
+                                </div>
+                                
+                                <div class="destination__card-text">
+                                    <div class="text-details">
+                                        <h5>Full Europe</h5>
+                                        <div class="days">
+                                            <img src="images/Navigation.png" alt="">
+                                            <p>10 days trip</p>
+                                        </div>
+                                    </div>
+                                    <h6 class="text-price">$5,42k</h6>
+                                </div>
+                            </div>
+                    </div>
+                <img class="destination__background" src="images/Decore(1).png" alt="">
+                </div>
+            </section>
+
+
+            <!-- book trip -->
+
+            <section class="book-trip container">
+
+                <div class="book-trip__left">
+                    <div class="book-trip__text">
+                        <h5>Easy and Fast</h5>
+                        <h2>book your next trop in 3 easy steps</h2>
                     </div>
 
-                        <div class="destination__card">
-                            <div class="destination__card-img">
-                                <img src="images/london.jpg" alt="">
-                                <div class="destination__overlay"></div>
+                    <div class="book-trip__step">
+                        <ul class="step">
+                            <img src="images/Group 7.png" alt="">
+                            <div class="book-trip__step-text">
+                                <h4>Choose Destination</h4>
+                                <h5>Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit. Urna, tortor tempus. </h5>
                             </div>
+                        </ul>
 
-                            <div class="destination__card-text">
-                                <div class="text-details">
-                                    <h5>London, UK</h5>
-                                    <p>10 days trip</p>
-                                </div>
-                                <h6 class="text-price">$5,42k</h6>
+                        <ul class="step">
+                            <img src="images/Group 12.png" alt="">
+                            <div class="book-trip__step-text">
+                                <h4>Choose Destination</h4>
+                                <h5>Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit. Urna, tortor tempus. </h5>
+                            </div>
+                        </ul>
+
+                        <ul class="step">
+                            <img src="images/Group 11.png" alt="">
+                            <div class="book-trip__step-text">
+                                <h4>Choose Destination</h4>
+                                <h5>Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit. Urna, tortor tempus. </h5>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="book-trip__right">
+                    <div class="book-trip__card-primary">
+                        <div class="image-window">
+                            <img src="images/Services.jpg" alt="">
+                        </div>
+
+                        
+                        <h4>Trip to Greece</h4>
+                        <h5>14-29 June | by Robbin John</h5>
+                        <div class="icons">
+                            <img src="images/LEAF.png" alt="">
+                            <img src="images/map icon.png" alt="">
+                            <img src="images/send.png" alt="">
+                        </div>
+                        <h5>24 people going</h5>
+                    </div>
+
+                    <div class="book-trip__card-secondary">
+                        <img class="icon" src="images/image 32.png" alt="">
+                        <div class="text">
+                            <h5>Ongoing</h5>
+                            <h3>Tip to Rome</h3>
+                            <div class="progress">
+                                <h4 class="strong">40%</h4>
+                                <h4>completed</h4>
+                                <img class="progress-bar" src="images/Group 3.png" alt="">
                             </div>
                         </div>
 
-                        <div class="destination__card">
-                            <div class="destination__card-img">
-                                <img src="images/europe.png" alt="">
-                                <div class="destination__overlay"></div>
-                            </div>
-                            
-                            <div class="destination__card-text">
-                                <div class="text-details">
-                                    <h5>Full Europe</h5>
-                                    <p>10 days trip</p>
-                                </div>
-                                <h6 class="text-price">$5,42k</h6>
-                            </div>
-                        </div>
+                    </div>
                 </div>
             </section>
 
             <!-- testimonials -->
 
-        <section class="testimonial container" id>
-            <!-- <div class="test-text"> -->
-                <div class="testimonial__text">
-                    <h4>Testimonials</h4>
-                    <h3>what people say <br> about us</h3>
+            <section class="testimonial container" id>
+                <!-- <div class="test-text"> -->
+                    <div class="testimonial__text">
+                        <h4>Testimonials</h4>
+                        <h3>what people say <br> about us</h3>
+                    </div>
+
+                    
+                    <div class="testimonial__card-container">
+                        <div class="testimonial__card">
+                            <div class="card-contents" id="primary">
+                                <img src="images/happy guy.png" alt="">
+                                <p>“On the Windows talking painted pasture yet its <br>
+                                    express parties use. Sure last upon he same as <br>
+                                    knew next. Of believed or diverted no.”
+                                </p>
+                                <h5>Mike taylor</h5>
+                                <h6>Lahore, Pakistan</h6>
+                            </div>
+                        </div>
+
+                        <div class="testimonial__card" id="secondary">
+                            <div class="card-contents">
+                                <img src="images/happy guy.png" alt="">
+                                <h5>Mike taylor</h5>
+                                <h6>Lahore, Pakistan</h6>
+                                <p>on the windows bla bla bla
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="testimonial__card" id="tertiary">
+                            <div class="card-contents">
+                                <img src="images/happy guy.png" alt="">
+                                <h5>Mike taylor</h5>
+                                <h6>Lahore, Pakistan</h6>
+                                <p>on the windows bla bla bla
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+            </section>
 
-                
-                <div class="testimonial__card-container">
-                    <div class="testimonial__card">
-                        <div class="card-contents" id="primary">
-                            <img src="images/happy guy.png" alt="">
-                            <h5>saidul islam</h5>
-                            <h6>sylhet, bangladesh</h6>
-                            <p>on the windows bla bla bla
-                            </p>
-                        </div>
-                    </div>
 
-                    <div class="testimonial__card" id="secondary">
-                        <div class="card-contents">
-                            <img src="images/happy guy.png" alt="">
-                            <h5>saidul islam</h5>
-                            <h6>sylhet, bangladesh</h6>
-                            <p>on the windows bla bla bla
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="testimonial__card" id="tertiary">
-                        <div class="card-contents">
-                            <img src="images/happy guy.png" alt="">
-                            <h5>saidul islam</h5>
-                            <h6>sylhet, bangladesh</h6>
-                            <p>on the windows bla bla bla
-                            </p>
-                        </div>
-                    </div>
+            <!-- logos -->
+            <section class="air-logo container">
+                <div class="air-logo__img">
+                    <img src="images/image 27.png" alt="">
                 </div>
-            </div>
-        </section>
+                <div class="air-logo__img">
+                    <img src="images/image 28.png" alt="">
+                </div>
+                <div class="air-logo__img">
+                    <img src="images/image 29.png" alt="">
+                </div>
+                <div class="air-logo__img">
+                    <img src="images/image 31.png" alt="">
+                </div>
+            </section>
 
 
-        <!-- logos -->
-        <section class="logo container">
-            <div class="logo__img">
-                <img src="images/image 27.png" alt="">
-            </div>
-            <div class="logo__img">
-                <img src="images/image 28.png" alt="">
-            </div>
-            <div class="logo__img">
-                <img src="images/image 29.png" alt="">
-            </div>
-            <div class="logo__img">
-                <img src="images/image 31.png" alt="">
-            </div>
-        </section>
+            <!-- subscribe -->
+            <section class="subscribe container">
+                <h2>Subscribe to get information, latest news and other <br>
+                    interesting offers about Cobham</h2>
 
-
-        <!-- subscribe -->
-        <section class="subscribe container">
-            <h2>Subscribe to get information, latest news and other <br>
-                interesting offers about Cobham</h2>
-
-            <div class="subscribe__input">
-                <input type="text" name="subscribe__email" class="subscribe__email" placeholder="Enter email">  
-                <button class="subscribe__btn">Subscribe</button>   
-            </div>
-        </section>
-
-            <!-- <section></section>
-            <section></section>
-            <section></section>
-            <section></section> -->
+                <div class="subscribe__input">
+                    <input type="text" name="subscribe__email" class="subscribe__email" placeholder="Enter email">  
+                    <button class="subscribe__btn">Subscribe</button>   
+                </div>
+            </section>
         </main>
+
         <footer class="footer container">
             <div class="contact-info">
                 <div class="first-info">
@@ -268,18 +366,18 @@
                         <a href="#"><i class='bx bxl-facebook'></i></a>
                         <a class="grad-icon" href="#"><i class='bx bxl-instagram'></i></i></a>
                         <a href="#"><i class='bx bxl-twitter'></i></a>
+                    </div>
 
                         <h5>Discover our app</h5>
                         <div class="img-info">
                             <img src="images/Google Play.png" alt="">
                             <img src="images/Play Store.png" alt="">
                         </div>
-                    </div>
                 </div>
             </div>
         </footer>
 
-        <script src="./script.js"></script>
+        <script src="script.js"></script>
 
     </body>
 </html>

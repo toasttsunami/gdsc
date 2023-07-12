@@ -1,11 +1,292 @@
+/* mmodern normalize */
+
+/*! modern-normalize v2.0.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
+
+/*
+Document
+========
+*/
+
+/**
+Use a better box model (opinionated).
+*/
+
+*,
+::before,
+::after {
+	box-sizing: border-box;
+}
+
+html {
+	/* Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3) */
+	font-family:
+		system-ui,
+		'Segoe UI',
+		Roboto,
+		Helvetica,
+		Arial,
+		sans-serif,
+		'Apple Color Emoji',
+		'Segoe UI Emoji';
+	line-height: 1.15; /* 1. Correct the line height in all browsers. */
+	-webkit-text-size-adjust: 100%; /* 2. Prevent adjustments of font size after orientation changes in iOS. */
+	-moz-tab-size: 4; /* 3. Use a more readable tab size (opinionated). */
+	tab-size: 4; /* 3 */
+}
+
+/*
+Sections
+========
+*/
+
+body {
+	margin: 0; /* Remove the margin in all browsers. */
+}
+
+/*
+Grouping content
+================
+*/
+
+/**
+1. Add the correct height in Firefox.
+2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
+*/
+
+hr {
+	height: 0; /* 1 */
+	color: inherit; /* 2 */
+}
+
+/*
+Text-level semantics
+====================
+*/
+
+/**
+Add the correct text decoration in Chrome, Edge, and Safari.
+*/
+
+abbr[title] {
+	text-decoration: underline dotted;
+}
+
+/**
+Add the correct font weight in Edge and Safari.
+*/
+
+b,
+strong {
+	font-weight: bolder;
+}
+
+/**
+1. Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
+2. Correct the odd 'em' font sizing in all browsers.
+*/
+
+code,
+kbd,
+samp,
+pre {
+	font-family:
+		ui-monospace,
+		SFMono-Regular,
+		Consolas,
+		'Liberation Mono',
+		Menlo,
+		monospace; /* 1 */
+	font-size: 1em; /* 2 */
+}
+
+/**
+Add the correct font size in all browsers.
+*/
+
+small {
+	font-size: 80%;
+}
+
+/**
+Prevent 'sub' and 'sup' elements from affecting the line height in all browsers.
+*/
+
+sub,
+sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sub {
+	bottom: -0.25em;
+}
+
+sup {
+	top: -0.5em;
+}
+
+/*
+Tabular data
+============
+*/
+
+/**
+1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
+2. Correct table border color inheritance in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
+*/
+
+table {
+	text-indent: 0; /* 1 */
+	border-color: inherit; /* 2 */
+}
+
+/*
+Forms
+=====
+*/
+
+/**
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+*/
+
+button,
+input,
+optgroup,
+select,
+textarea {
+	font-family: inherit; /* 1 */
+	font-size: 100%; /* 1 */
+	line-height: 1.15; /* 1 */
+	margin: 0; /* 2 */
+}
+
+/**
+Remove the inheritance of text transform in Edge and Firefox.
+*/
+
+button,
+select {
+	text-transform: none;
+}
+
+/**
+Correct the inability to style clickable types in iOS and Safari.
+*/
+
+button,
+[type='button'],
+[type='reset'],
+[type='submit'] {
+	-webkit-appearance: button;
+}
+
+/**
+Remove the inner border and padding in Firefox.
+*/
+
+::-moz-focus-inner {
+	border-style: none;
+	padding: 0;
+}
+
+/**
+Restore the focus styles unset by the previous rule.
+*/
+
+:-moz-focusring {
+	outline: 1px dotted ButtonText;
+}
+
+/**
+Remove the additional ':invalid' styles in Firefox.
+See: https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737
+*/
+
+:-moz-ui-invalid {
+	box-shadow: none;
+}
+
+/**
+Remove the padding so developers are not caught out when they zero out 'fieldset' elements in all browsers.
+*/
+
+legend {
+	padding: 0;
+}
+
+/**
+Add the correct vertical alignment in Chrome and Firefox.
+*/
+
+progress {
+	vertical-align: baseline;
+}
+
+/**
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+	height: auto;
+}
+
+/**
+1. Correct the odd appearance in Chrome and Safari.
+2. Correct the outline style in Safari.
+*/
+
+[type='search'] {
+	-webkit-appearance: textfield; /* 1 */
+	outline-offset: -2px; /* 2 */
+}
+
+/**
+Remove the inner padding in Chrome and Safari on macOS.
+*/
+
+::-webkit-search-decoration {
+	-webkit-appearance: none;
+}
+
+/**
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to 'inherit' in Safari.
+*/
+
+::-webkit-file-upload-button {
+	-webkit-appearance: button; /* 1 */
+	font: inherit; /* 2 */
+}
+
+/*
+Interactive
+===========
+*/
+
+/*
+Add the correct display in Chrome and Safari.
+*/
+
+summary {
+	display: list-item;
+}
+
+
+
 :root {
-    --clr-yellow: #FFC365;
+    --clr-yellow: #FFF1DA;
     --clr-red: #DF6951;
     --clr-orange: #FFA90F;
     --clr-dark-blu-gray: #181E4B;
     --clr-gray: #212832;
     --clr-light-gray: #5E6282;
-    --clr-lavender: #DFD7F9;
+    --clr-lavender: #dfd7f9;
+    --clr-light-lavender: #dfd7f9d9;
+    --clr-dark-lavender: #8A79DF;
 
     --size-xxs: 0.5rem;
     --size-xs: 0.75rem;
@@ -37,6 +318,7 @@
     font-family: 'Poppins', sans-serif;
     list-style: none;
     text-decoration: none;
+    font-size: 16px;
 }
 
 /* ----------------------- */
@@ -85,9 +367,13 @@ button {
     cursor: pointer;
 }
 
-ion-icon { pointer-events: none;}
+ion-icon { 
+  pointer-events: none;
+}
 
-address { font-style: normal;}
+address { 
+  font-style: normal;
+}
 
 html {
     font-family: 'Poppins';
@@ -98,8 +384,8 @@ html {
 body {
     background-color: white;
     color: black;
-    font-size: 1.6rem;
-    line-height: 1.8;
+    /* font-size: 1.6rem; */
+    /* line-height: 1.8; */
 }
 
 .container {
@@ -111,66 +397,52 @@ body {
 
   }
 
-header {
-  /* position: fixed;
-  padding-left: 0vh;
-  padding-right: 0vh;
-  top: 0;
-  z-index: 1000;
-  display: flex;
-   justify-content: space-between;
-  align-items: center;
-    /* padding-top: 2rem;
-    padding-bottom: 2rem; */
-    /* padding: 22px 12%;
-  border: 1px solid green;
-  transform: translateY(-70px); */
 
-  position: absolute;
+.header-cont {
+  position: fixed;
   top: 0;
-  left: 0; 
-  right: 0; 
+  left: 0;
+  right: 0;
   z-index: 1000;
+  /* background-color: var(--clr-yellow); */
+  padding: 22px 12%;
+  transition: .43s;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 70px; 
-  padding: 0 12%; 
-  /* border: 1px solid green; */
+  height: 70px; /* Add this line */
+  width: 100%;
 }
 
-header.sticky {
-  position: fixed;
-  background-color: rgba(255, 241, 218, 0.96);
-  padding: 22px 12%;
-  box-shadow: 0px 4px 15px rgb(0,0,0 / 8%);
-  transition: .43s;
+.sticky {
+  background-color: var(--clr-yellow);
 }
 
-.header img {
+.logo {
   max-width: 100%;
   width: 120px;
   height: auto;
 }
 
-.header__menu {
-  gap: 10rem;
-  padding-left: 3rem;
+.header__bars {
+  display: none;
+}
+
+.header__nav {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center; /* Add this line */
+  gap: 2rem;
 }
 
 .header__nav-item {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-grow: 1;
   gap: 2rem;
 }
 
 .header__link {
-    /* font-size: var(--size-xs); */
   color: var(--clr-gray);
   font-weight: 500;
   position: relative;
@@ -198,19 +470,18 @@ header.sticky {
 .header__auth-btn {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-self: flex-end;
   gap: 2rem;
-  padding-right: 1rem;
 }
 
 .header__signup-btn {
-  font-size: 16px;
+  font-size: 1em;
   color: black;
   font-weight: 500;
   border: 2px solid black;
   padding: 5px 15px;
   border-radius: 5px;
-  margin-right: 20px;
+  /* margin-right: 20px; */
   transition: all .42s;
 }
 
@@ -219,34 +490,85 @@ header.sticky {
   color: white;
 }
 
-.header__bars {
-  color: var(--clr-gray);
-  font-size: 30px;
-  visibility: hidden;
+.header__menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* flex-grow: 1; Add this line */
+  /* gap: 11rem; Change this line */
+  padding-left: 3rem;
 }
 
-.header.active {
+
+
+
+/* Existing CSS styles */
+
+
+
+.sidebar {
   position: fixed;
-    top: 0;
-    right: -350px;
-    max-width: 350px;
-    width: 100%;
-    height: 100vh;
-    background-color: var(--bg-white);
-    padding: 30px 16px;
-    display: flex;
-    flex-direction: column;
-    z-index: 1;
-    transition: 400ms var(--cubic-out);
-    transform: translateX(-350px);
-    transition-duration: 500ms;
-    visibility: visible;
+  top: 0;
+  right: -100%; /* Start the sidebar off-screen */
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 241, 218, 0.96);
+  z-index: 999;
+  transition: right 0.3s ease-in-out;
+  display: flex;
+  justify-content: flex-start;
+  align-items: end;
+  flex-direction: column;
+  padding-left: ;
+  padding-top: 70px;
+  display: none;
 }
+
+.sidebar ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  padding-right: 100px;
+}
+
+.sidebar li {
+  padding: 10px;
+}
+
+.sidebar a {
+  color: black;
+  text-decoration: none;
+  font-size: 1em;
+  display: block;
+}
+
+/* Media query for toggling the sidebar on smaller screens */
+@media (max-width: 768px) {
+  
+}
+
+
+
+
+
+.background {
+  position: fixed;
+  z-index: -1;
+
+}
+
+.background img {
+  width: 100vw;
+  height: auto;
+  /* opacity: 80%; */
+}
+
 
 .hero {
   width: 100%;
   height: auto;
-  background-image: url(image/Decore.png);
+  /* background-image: url(image/Decore.png); */
   background-position: center;
   background-size: cover ;
   padding-top: 7vh;
@@ -264,7 +586,7 @@ header.sticky {
 
 .hero__text h4 {
   color: var(--clr-red);
-  font-size: 20px;
+  font-size: 1.2em;
   font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 10px;
@@ -274,7 +596,7 @@ header.sticky {
 
 .hero__text h1 {
   columns: var(--clr-dark-blu-gray);
-  font-size: 65px;
+  font-size: 4em;
   font-family: var(--font-volkhov);
   font-weight: 700;
   line-height: 70px;
@@ -284,7 +606,7 @@ header.sticky {
 
 .hero__text p {
   color: var(--clr-light-gray);
-  font-size: 16px;
+  font-size: 1em;
   font-weight: 500;
   line-height: 30px;
   margin-bottom: 30px;
@@ -305,6 +627,9 @@ header.sticky {
 }
 
 .btn1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-weight: 500;
   color: white;
   text-transform: capitalize;
@@ -312,8 +637,10 @@ header.sticky {
   background: var(--clr-orange);
   border-radius: 10px;
   margin-right: 40px;
+  min-height: 55px;
   min-width: 30%;
   transform: all 420ms;
+  transition-duration: 400ms;
 }
 
 .btn1:hover {
@@ -323,28 +650,32 @@ header.sticky {
 
 .btn2 {
   color: darkslategrey;
-  font-size: 16px;
+  font-size: 1em;
   font-weight: 500;
   font-style: normal;
   text-transform: capitalize;
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
+  transform: all .42s;
+}
+
+.btn2 .btn-box {
+  width: 6rem;
+  height: 6rem;
+  border: 1px solid red;
+  background: var(--clr-red);
+  border-radius: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 15px 30px rgba(223, 105, 81, 0,3);
 }
 
 .hero__play-btn{
-  width: 52px;
-  height: 52px;
-  font-size: 30px;
-  background: var(--clr-red);
+  width: 30px;
+  height: 30px;
   color: white;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  box-shadow: 0px 15px 30px rgba(223, 105, 81, 0,3);
-  margin-right: 15px;
-  transform: all .42s;
 }
 
 .btn2 span i:hover {
@@ -364,12 +695,13 @@ header.sticky {
 .services {
   padding-bottom: 5vh;
 }
+
 .services__center-text {
   text-align: center;
 }
 
 .services__center-text h4 {
-  font-size: 18px;
+  font-size: 1.125em;
   color: grey;
   font-weight: 600;
   text-transform: uppercase;
@@ -377,7 +709,7 @@ header.sticky {
 }
 
 .services__center-text h2 {
-  font-size: 50px;
+  font-size: 3.125em;
   color: #181e11;
   text-transform: capitalize;
   font-weight: 700;
@@ -394,6 +726,10 @@ header.sticky {
 }
 
 .services__cate-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   max-width: 100%;
   height: auto;
   padding: 40px 20px;
@@ -402,28 +738,43 @@ header.sticky {
   transition: all .42s;
 }
 
+/* .services__card-bg {
+  position: relative;
+  background-color: red;
+  width: 40%;
+  aspect-ratio: 1.17;
+  z-index: 2;
+  border: 1px solid green;
+  border-radius: 20%;
+  border-top-left-radius: 50%;
+} */
+
 .services__cate-card:hover {
   transform: translateY(-5px);
   box-shadow: rgba(0, 0, 0, 0.5) -4px 9px 25px -6px;
 }
 
+/* .services__cate-card:hover .services__card-bg{
+
+} */
+
 .services__cate-card img {
   width: 75px;
   height: auto;
   margin-bottom: 20px;
-
 }
 
 .services__cate-card h5 {
-  font-size: 16px;
-  color: #181e11;
-  font-weight: 600;
+  font-size: 1.2em;
+  color: var(--clr-gray);
+  font-weight: 500;
   margin-bottom: 15px;
 }
 
 .services__cate-card p {
-  color: #212831;
-  font-size: 14px;
+  color: var(--clr-light-gray);
+  font-size: 1em;
+  line-height: 1.6;
   font-weight: 500;
 }
 
@@ -437,21 +788,23 @@ header.sticky {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, auto));
   align-items: center;
-  gap: 2rem;
+  gap: 5rem;
   border-radius: 10px 10px 10px 10px;
 }
 
 .destination__card-img img{
   width: 100%;
-  height: 50vh;
-  border-radius: 10px;
+  /* height: 50vh; */
   transition: all .42s;
   border-radius: 10px 10px 10px 10px;
 }
 
+.destination__text {
+  padding-bottom: 3rem;
+}
 
 .destination__text h5{
-  font-size: 18px;
+  font-size: 1.125em;
   color: #5E6282;
   text-transform: capitalize;
   font-weight: 600;
@@ -461,17 +814,22 @@ header.sticky {
 
 .destination__text h2 {
   color: #14183e;
-  font-size: 50px;
+  font-size: 3.125em;
   text-transform: capitalize;
   font-weight: 700;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: var(--font-volkhov);
   text-align: center;
   margin-bottom: 50px;
 }
 
 .destination__card {
   position: relative;
+  border-radius: 10px 10px 10px 10px;
+  /* border: 1px solid red; */
+  /* border-radius: 10%; */
   transition-duration: .42s;
+  width: auto;
+  height: 100%;
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
 }
 
@@ -482,33 +840,52 @@ header.sticky {
 
 .destination__card .destination__card-text {
   display: grid;
-  grid-template-columns: 1 2fr;
+  grid-template-columns: 3fr 1fr;
   position: absolute;
   bottom: 5%;
   left: 20px;
 }
 
 .destination__card-text {
+  width: 100%;
   z-index: 10;
+}
+
+.destination__card-text .text-details {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: space-between;
+  
+}
+
+.destination__card-text .days {
+  display: flex;
+  gap: 1rem;
 }
 
 .destination__card-text p {
   color: black;
-  font-size: 14px;
-  font-weight: 500;
+  font-size: 1em;
+  font-weight: 400;
 }
 
 .destination__card-text h5 {
   color: black;
-  font-size: 17px;
-  font-weight: 700;
+  font-size: 1.125em;
+  font-weight: 500;
 }
 
 
 .destination__card-text h6 {
   color: black;
-  font-size: 14px;
+  font-size: 1.125em;
   font-weight: 500;
+}
+
+.destination__card .text-price {
+  position: relative;
+  /* margin-left: 100%; */
 }
 
 
@@ -523,6 +900,242 @@ header.sticky {
   z-index: 1;
 }
 
+/* .destination__background {
+  position: absolute;
+  z-index: -1;
+  /* border: 10px solid red; *  
+  transform: translate(1150%, -180%);
+  /* transform: ; *
+} */
+
+.testdiv {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(3. 1fr);
+}
+
+.destination__card-container {
+  grid-column: 1 / -1;
+  grid-row: 1 / 4;
+}
+
+.destination__background {
+  z-index: -1;
+  /* border: 1px solid red; */
+  grid-column: 10 / -1;
+  grid-row: 2 / 3;
+  height: 100%;
+  transform: translateX(70%);
+}
+
+/* booktrip*/
+
+/* Set the container to flex and divide it into two columns */
+.book-trip {
+  display: flex;
+  padding-bottom: 40px;
+}
+
+/* Style the left column */
+.book-trip__left {
+  flex: 1;
+  padding: 20px;
+}
+
+/* Style the text at the top of the left column */
+.book-trip__text h5 {
+  font-family: var(--font-poppins);
+  margin: 0;
+  font-size: 1.125em;
+  color: #5E6282;
+  font-weight: 600;
+}
+
+.book-trip__text h2 {
+  font-family: var(--font-volkhov);
+  margin-top: 10px;
+  font-size: 3.125em;
+  text-transform: capitalize;
+  color: #14183e;
+  font-weight: 700;
+}
+
+
+/* Style the three points in the left column */
+.book-trip__step {
+  margin-top: 30px;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.step img {
+  width: 40px;
+  margin-right: 15px;
+}
+
+.step h4 {
+  margin: 0;
+  font-size: 1em;
+  color: #5E6282;
+  font-weight: 700;
+}
+
+.step h5 {
+  margin: 0;
+  font-size: 1em;
+  line-height: 1.5;
+  color: #5E6282;
+  font-weight: 500;
+}
+
+/* Style the right column */
+.book-trip__right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+/* Style the primary card in the right column */
+.book-trip__card-primary {
+  margin-left: 10px;
+  max-width: 70%;
+  padding: 20px;
+  padding-top: 0px;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+    /* box-shadow: 0px -5px 0px -5px blue; */
+}
+
+.book-trip__card-primary img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.book-trip__card-primary .image-window {
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -10px;
+  margin-bottom: -10px;
+}
+
+.book-trip__card-primary .icons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.book-trip__card-primary .icons img {
+  width: 40px;
+}
+
+.book-trip__card-primary h4 {
+  margin: 0;
+  color: var(--clr-dark-blu-gray);
+  font-weight: 500;
+  padding-bottom: 10px;
+}
+
+.book-trip__card-primary h5 {
+  margin: 0;
+  color: #5E6282;
+  font-weight: 500;
+  padding-bottom: 5px;
+}
+
+/* Style the secondary card in the right column */
+.book-trip__card-secondary {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  max-width: 80%;
+  padding: 15px;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 55%;
+  /* height: 33%; */
+  z-index: 2;
+  margin-top: -200px;
+  margin-left: 270px;
+}
+
+.book-trip__card-secondary .icon  {
+  position: relative;
+  max-width: 100%;
+  width: 50px;
+  height: 50px; 
+  border-radius: 50%;
+  /* top: -22%; */
+  /* z-index: 3;
+  transform: translateX(-100%) */
+}
+
+.book-trip__card-secondary .text {
+  margin-left: -10px;
+  /* margin-top: -7px; */
+}
+
+.book-trip__card-secondary .progress {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+}
+
+
+.book-trip__card-secondary h5 {
+  color: var(--clr-light-gray);
+  font-weight: 400;
+  margin: 0;
+  font-size: 0.875em;
+}
+
+.book-trip__card-secondary h3 {
+  font-weight: 600;
+  margin: 10px 0;
+  font-size: 1.125em;
+}
+
+.book-trip__card-secondary .progress h4 {
+  font-weight: 600;
+  margin-left: -45px;
+  font-size: 0.875em;
+}
+
+.book-trip__card-secondary .progress .strong{
+  color: var(--clr-dark-lavender);
+  font-size: 2rem;
+  /* margin-bottom: 5px; */ 
+  margin-left: 0px;
+}
+
+.book-trip__card-secondary .progress-bar {
+  width: 80%;
+  padding-top: 8px;
+  /* border: 1px solid red; */
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.book-trip__card-secondary .progress img{
+  /* width: 100%; */
+  height: auto;
+}
 
 /* testimonials */
 
@@ -537,7 +1150,7 @@ header.sticky {
 
 .testimonial__text h4 {
   color: #5e6282;
-  font-size: 18px;
+  font-size: 1.125em;
   text-transform: capitalize;
   font-weight: 600;
   letter-spacing: 0.5px;
@@ -545,11 +1158,11 @@ header.sticky {
 }
 
 .testimonial__text h3 {
-  font-size: 50px;
+  font-size: 3.125em;
   color: #14183e;
   text-transform: capitalize;
   font-weight: 700;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: var(--font-volkhov);
   line-height: 120%;
 }
 
@@ -607,30 +1220,31 @@ header.sticky {
 
 .testimonial__card h5 {
   color: #5e6282;
-  font-size: 16px;
+  font-size: 1em;
   text-transform: capitalize;
   font-weight: 600;
-  margin-top: 3px;
+  margin-top: 3px; 
 }
 
 .testimonial__card h6 {
   color: #5e5e5e;
-  font-size: 14px;
+  font-size: 0.875em;
   text-transform: capitalize;
   font-weight: 500;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .testimonial__card p {
   color: #5e6282;
-  font-size: 14px;
+  font-size: 0.875em;
   font-weight: 500;
-  line-height: 25px   ;
+  line-height: 25px;
+  margin-bottom: 20px;
 }
 
 
 /* logos */
-.logo {
+.air-logo {
   padding-top: 100px;
   padding-bottom: 100px;
   display: grid;
@@ -639,7 +1253,7 @@ header.sticky {
   align-items: center;
 }
 
-.logo__img {
+.air-logo__img {
   width: 100%;
   height: 10rem;
   display: flex;
@@ -650,7 +1264,7 @@ header.sticky {
   filter: grayscale(100%);
 }
 
-.logo img {
+.air-logo img {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -659,7 +1273,7 @@ header.sticky {
   height: auto;
 }
 
-.logo__img:hover {
+.air-logo__img:hover {
   filter: grayscale(0%);
   transform: translateY(-5px);
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
@@ -668,9 +1282,9 @@ header.sticky {
 /* subscribe */
 
 .subscribe {
-  background-color: var(--clr-lavender);
-  padding-top: 3vh;
-  padding-bottom: 3vh;
+  background-color: var(--clr-light-lavender);
+  padding-top: 4vh;
+  padding-bottom: 5vh;
   border-radius: 1vh;
   border-top-left-radius: 5vh;
   
@@ -710,7 +1324,11 @@ header.sticky {
 
 .subscribe h2 {
   text-align: center;
+  font-size: 2em;
+  font-weight: 600;
+  color: var(--clr-light-gray);
 }
+
 
 /* contact */
 
@@ -765,45 +1383,32 @@ footer {
   color: var(--clr-red);
 }
 
-.first-info .icon a {
+.fifth-info .icon {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  padding-bottom: 10px;
+}
+
+.fifth-info .icon a {
   color: black;
-  font-size: 20px;
+  font-size: 1.2em;
   width: 35px;
   height: 35px;
   border: 1px solid black;
   border-radius: 50%;
-  background-color: white;
   display: inline-flex;
-  align-items: center;
   justify-content: center;
-  box-shadow: 0px 4px 15px rgb(0, 0, 0 / 10%);
-  margin-right: 15px;
-  margin-bottom: 20px;
-  transition: all .42s;
+  align-items: center;
 }
 
-
-.first-info .icon .grad-icon {
-  background-color: linear-gradient(#ef32d9, #89fffd);
-  color: white;
-}
-
-.first-info .icon a:hover {
-  transform: scale(1.1);
-}
-
-.first-info h5 {
-  columns: var(--clr-light-gray);
-  text-transform: capitalize;
+.fifth-info h5 {
+  color: var(--clr-light-gray);
+  font-size: 20px;
   font-weight: 500;
-  margin-bottom: 15px;
-  cursor: pointer;
-  transform: all .42s;
+  padding-bottom: 5px;
 }
 
-.first-info h5:hover {
-  color: var(--clr-red);
-}
 
 .img-info img {
   width: 100px;
@@ -838,64 +1443,248 @@ footer {
 
 
 /* xs */
-@media (min-width: 475px) {
+@media (min-width: 475px) and (max-width: 768px) {
   .container {
     max-width: 475px;
+  }
+
+  .header__bars {
+    display: block;
+    z-index: 1000;
+  }
+
+  .header img {
+    z-index: 1000;
+  }
+
+  .header__nav-item {
+    display: none;
+  }
+
+  .sidebar {
+      right: 0; /* Show the sidebar */
+  }
+
+  .sidebar.open {
+      right: 0; /* Show the sidebar */
+      display: block;
+  }
+  
+  .hero {
+    font-size: 12px;
   }
 }
 
 /* sm */
-@media (min-width: 640px) {
+@media (min-width: 640px) and (max-width: 768px) {
   .container {
     max-width: 640px;
+    padding-left: 0.5vh;
+    padding-right: 0.5vh;
+  }
+
+  .header__bars {
+    display: block;
+    z-index: 1000;
+  }
+
+  .header img {
+    z-index: 1000;
+  }
+
+  .header__nav-item {
+    display: none;
+  }
+
+  .sidebar {
+      right: 0; /* Show the sidebar */
+  }
+
+  .sidebar.open {
+      right: 0; /* Show the sidebar */
+      display: block;
+  }
+  
+  .hero {
+    font-size: 12px;
   }
 }
 
 /* md */
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .container {
     max-width: 768px;
+    padding-left: 1.3vh;
+    padding-right: 1.3vh;
   }
 
-  .header {
-    display: flex;
-  }
-
-  .header__menu{
-    visibility: hidden;
+  .hero {
+    font-size: 13px;
   }
 
   .header__bars {
-    position: absolute;
-    right: 10vh;
-    top: 3vh;
-    visibility: visible;
+    display: block;
+    z-index: 1000;
   }
+
+  .header img {
+    z-index: 1000;
+  }
+
+  .header__nav-item {
+    display: none;
+  }
+
+  .sidebar {
+      right: 0; /* Show the sidebar */
+  }
+
+  .sidebar.open {
+      right: 0; /* Show the sidebar */
+      display: block;
+  }
+
+  .hero {}
+
+  .book-trip__card-primary {
+    padding: 10px;
+    margin-left: 30px;
+    margin-top: 20px;
+    max-width: 100%;
+  }
+
+  .book-trip__card-primary .image-window {
+    height: 180px;
+  }
+
+  .book-trip__card-secondary {
+    margin-top: 0px;
+    margin-left: 100px;
+    transform: translateY(-255%);
+    width: 300px;
+  }
+
+  .testimonial__card-container {
+    margin-top: 40px;
+    margin-bottom: -30px;
+    max-width: 110%;
+    margin-left: -15px;
+  }
+
+  .testimonial__card {
+    position: relative;
+    display: block;
+    pointer-events: none;
+    margin-bottom: -50px;
+    height: 60%;
+  }
+
 }
 
 /* lg */
-@media (min-width: 1024px) {
+@media (min-width: 1024px) and (max-width: 1304px)  {
   .container {
     max-width: 1024px;
-    padding-left: 5vh;
-    padding-right: 5vh;
+    padding-left: 3vh;
+    padding-right: 3vh;
   }
 
   .section {
     margin-top: 10rem;
   }
+
+  .services__cate-card {
+    padding: 20px 15px;
+  }
+
+  .destination__card {
+    height: 88%;
+  }
+
+  .destination__card .destination__card-text {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    position: absolute;
+    width: 90%;
+    bottom: 3%;
+    left: 15px;
+  }
+
+  .destination__card-text p {
+    color: black;
+    font-size: 0.875em;
+    font-weight: 400;
+  }
+  
+  .destination__card-text h5 {
+    color: black;
+    font-size: 1em;
+    font-weight: 500;
+  }
+  
+  
+  .destination__card-text h6 {
+    color: black;
+    font-size: 1em;
+    font-weight: 500;
+  }
+
+
+  .step h4 {
+    font-size: 0.875em;
+  }
+  
+  .step h5 {
+    font-size: 0.875em;
+  }
+
+  .book-trip__card-primary {
+    padding: 10px;
+    margin-left: 30px;
+    margin-top: 20px;
+  }
+
+  .book-trip__card-primary .image-window {
+    height: 180px;
+  }
+
+  .book-trip__card-secondary {
+    margin-top: 0px;
+    margin-left: 200px;
+    transform: translateY(-35%);
+    width: 70%;
+  }
 }
 
+min-width : 768px) and (max-width : 1024px)
+
 /* xl */
-@media (min-width: 1305px) {
+@media (min-width: 1305px) and (max-width: 1535px) {
   .container {
     max-width: 1305px;
   }
+
+  .header__bars {
+    display: none;
+  }
+
+  .header__nav-item {
+    display: flex;
+  }
+
 }
 
 /* 2xl */
 @media (min-width: 1536px) {
   .container {
     max-width: 1536px;
+  }
+
+  .header__bars {
+    display: none;
+  }
+
+  .header__nav-item {
+    display: flex;
   }
 }
